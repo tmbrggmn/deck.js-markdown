@@ -5,7 +5,7 @@ in the slides HTML page, the content of every slide will be interpreted as Markd
 
 ## Dependencies
 
-This extension depends on the JavaScript PageDown Converter for Markdown conversion (PageDown Converter (http://code.google.com/p/pagedown/).
+This extension depends on the JavaScript [PageDown Converter] (http://code.google.com/p/pagedown) for Markdown conversion.
 
 ## Installation
 
