@@ -23,4 +23,4 @@ This extension depends on the JavaScript [PageDown Converter] (http://code.googl
 
 ## Known Issues
 
-Check the issues list for any known or unresolved issues.
+Check the [issues list](https://github.com/tmbrggmn/deck.js-markdown/issues) for any known or unresolved issues.
