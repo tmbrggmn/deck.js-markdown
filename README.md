@@ -19,7 +19,7 @@ This extension depends on the JavaScript PageDown Converter for Markdown convers
 <script src="extensions/markdown/deck.markdown.js"></script>
 ```
 	
-Note: the order of the JS imports matters! The PageDown Converter code **must** be included before the extension.
+*Note:* the order of the JS imports matters! The PageDown Converter code **must** be included before the extension.
 
 ## Known Issues
 
