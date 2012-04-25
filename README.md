@@ -24,3 +24,14 @@ This extension depends on the JavaScript [PageDown Converter] (http://code.googl
 ## Known Issues
 
 Check the [issues list](https://github.com/tmbrggmn/deck.js-markdown/issues) for any known or unresolved issues.
+
+## Extensions
+
+Allows to write slides as HTML slides by adding the css class *no-md* to the slide section element
+
+```
+<section class="slide no-md" id="no-markdown-slide">
+    <h2>This slide is not interpreted as markdown</h2>
+    <p>Use this to prevent certain flaws when processing sub slides...</p>
+</section>
+```
