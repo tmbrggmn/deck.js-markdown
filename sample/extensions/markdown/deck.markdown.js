@@ -10,6 +10,8 @@
  * 
  * Feel free to provide (constructive) feedback! I'm certainly not a JavaScript specialist, so there's a real
  * posibility that I've done something stupid :-)
+ *
+ * Some changes by saintedlama
  */
 
 (function($, deck, undefined) {
@@ -18,12 +20,11 @@
 	
 	$d.bind('deck.init', function() {
 		$.each($.deck("getSlides"), function(index, value) {
-			value.html(converter.makeHtml(value.html()));
+            var cssClass = value.attr('class');
+            // Prevent slides marked with no-md css class to be interpreted as markdown
+            if (!cssClass || cssClass.indexOf('no-md') < 0) {
+                value.html(converter.makeHtml(value.html()));
+            }
 		});
 	});
-	
-	/*$(document).bind('deck.change', function(event, from, to) {
-		var newSlide = $.deck('getSlide', to);
-		newSlide.html(converter.makeHtml(newSlide.html()));
-	});*/
 })(jQuery, 'deck');
