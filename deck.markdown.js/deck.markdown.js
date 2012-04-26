@@ -15,16 +15,9 @@
  */
 
 (function($, deck, undefined) {
-	var $d = $(document);
-	var converter = new Markdown.Converter();
-	
-	$d.bind('deck.init', function() {
-		$.each($.deck("getSlides"), function(index, value) {
-            var cssClass = value.attr('class');
-            // Prevent slides marked with no-md css class to be interpreted as markdown
-            if (!cssClass || cssClass.indexOf('no-md') < 0) {
-                value.html(converter.makeHtml(value.html()));
-            }
-		});
-	});
+	$(document).bind('deck.beforeInit', function() {
+   var $c = $.deck('getContainer');
+
+   $c.html(new Markdown.Converter().makeHtml($c.html()));
+});
 })(jQuery, 'deck');
