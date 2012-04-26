@@ -1,7 +1,7 @@
 # deck.js-markdown
 
 A small extension for [deck.js](https://github.com/imakewebthings/deck.js) that adds support for Markdown syntax in slides. When this extension is included
-in the slides HTML page, the content of every slide will be interpreted as Markdown and its HTML content will be replaced by the Markdown converter output.
+in the slides HTML page, the content of every slide will be interpreted as Markdown and its content will be replaced by the Markdown converter output.
 
 ## Dependencies
 
@@ -25,13 +25,3 @@ This extension depends on the JavaScript [PageDown Converter] (http://code.googl
 
 Check the [issues list](https://github.com/tmbrggmn/deck.js-markdown/issues) for any known or unresolved issues.
 
-## Extensions
-
-Allows to write slides as HTML slides by adding the css class *no-md* to the slide section element
-
-```
-<section class="slide no-md" id="no-markdown-slide">
-    <h2>This slide is not interpreted as markdown</h2>
-    <p>Use this to prevent certain flaws when processing sub slides...</p>
-</section>
-```
